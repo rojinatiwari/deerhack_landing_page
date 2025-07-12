@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DeerHack - Cross-Device LAN Control & Sync System</title>
+    <title>SyncBridge- Cross-Device LAN Control & Sync System</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
@@ -20,13 +20,12 @@
       <div class="nav-container">
         <div class="nav-logo">
           <i class="fas fa-network-wired"></i>
-          <span>DeerHack</span>
+          <span>SyncBridge</span>
         </div>
         <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
           <li><a href="#features">Features</a></li>
-          <li><a href="#components">Components</a></li>
-          <li><a href="#security">Security</a></li>
-          <li><a href="#download">Download</a></li>
+          <li><a href="#download">Services</a></li>
         </ul>
         <div class="hamburger">
           <span></span>
@@ -37,7 +36,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="home" class="hero">
       <div class="hero-container">
         <div class="hero-content">
           <h1 class="hero-title">Cross-Device LAN Control & Sync System</h1>
@@ -118,7 +117,7 @@
     <section id="features" class="features">
       <div class="container">
         <div class="section-header">
-          <h2>Powerful Features</h2>
+          <h2> Features</h2>
           <p>Everything you need for seamless cross-device control</p>
         </div>
         <div class="features-grid">
@@ -185,184 +184,11 @@
       </div>
     </section>
 
-    <!-- Components Section -->
-    <section id="components" class="components">
-      <div class="container">
-        <div class="section-header">
-          <h2>System Components</h2>
-          <p>Four powerful components working together seamlessly</p>
-        </div>
-        <div class="components-grid">
-          <div class="component-card">
-            <div class="component-header">
-              <div class="component-icon mobile">
-                <i class="fas fa-mobile-alt"></i>
-              </div>
-              <h3>Mobile App</h3>
-              <span class="tech-badge">React Native</span>
-            </div>
-            <p>
-              Acts as a remote controller and data sender. Communicates with
-              desktop/browser over WebSocket.
-            </p>
-            <ul class="component-features">
-              <li><i class="fas fa-check"></i> Clipboard sync</li>
-              <li><i class="fas fa-check"></i> File transfer</li>
-              <li><i class="fas fa-check"></i> Touchpad-style mouse</li>
-              <li><i class="fas fa-check"></i> Virtual keyboard</li>
-              <li><i class="fas fa-check"></i> Background support</li>
-              <li><i class="fas fa-check"></i> QR code pairing</li>
-            </ul>
-          </div>
-          <div class="component-card">
-            <div class="component-header">
-              <div class="component-icon desktop">
-                <i class="fas fa-laptop"></i>
-              </div>
-              <h3>Desktop App</h3>
-              <span class="tech-badge">Python</span>
-            </div>
-            <p>
-              Background service that listens over LAN. WebSocket server built
-              with asyncio and websockets.
-            </p>
-            <ul class="component-features">
-              <li><i class="fas fa-check"></i> Clipboard receive & update</li>
-              <li><i class="fas fa-check"></i> Mouse & keyboard simulation</li>
-              <li><i class="fas fa-check"></i> File receiver/sender</li>
-              <li><i class="fas fa-check"></i> Command execution</li>
-              <li><i class="fas fa-check"></i> QR code generator</li>
-              <li><i class="fas fa-check"></i> System tray integration</li>
-            </ul>
-          </div>
-          <div class="component-card">
-            <div class="component-header">
-              <div class="component-icon web">
-                <i class="fas fa-globe"></i>
-              </div>
-              <h3>Web Controller</h3>
-              <span class="tech-badge">Browser-based</span>
-            </div>
-            <p>
-              Browser-based UI for testing features without mobile app. Hosted
-              on local network.
-            </p>
-            <ul class="component-features">
-              <li><i class="fas fa-check"></i> Clipboard sync (manual)</li>
-              <li><i class="fas fa-check"></i> Slide control</li>
-              <li><i class="fas fa-check"></i> Touchpad simulation</li>
-              <li><i class="fas fa-check"></i> File upload</li>
-              <li><i class="fas fa-check"></i> QR code pairing UI</li>
-              <li><i class="fas fa-check"></i> LAN-only operation</li>
-            </ul>
-          </div>
-          <div class="component-card">
-            <div class="component-header">
-              <div class="component-icon extension">
-                <i class="fas fa-puzzle-piece"></i>
-              </div>
-              <h3>Browser Extension</h3>
-              <span class="tech-badge">Chrome/Firefox</span>
-            </div>
-            <p>
-              Injects scripts into Google Slides, Canva, Prezi. Simulates
-              keypresses for slide navigation.
-            </p>
-            <ul class="component-features">
-              <li><i class="fas fa-check"></i> Site-specific scripts</li>
-              <li><i class="fas fa-check"></i> WebSocket client</li>
-              <li><i class="fas fa-check"></i> Slide navigation</li>
-              <li><i class="fas fa-check"></i> Scoped permissions</li>
-              <li><i class="fas fa-check"></i> Key event simulation</li>
-              <li><i class="fas fa-check"></i> Future overlay UI</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Security Section -->
-    <section id="security" class="security">
-      <div class="container">
-        <div class="section-header">
-          <h2>Security & Privacy</h2>
-          <p>Your data stays local and secure</p>
-        </div>
-        <div class="security-content">
-          <div class="security-features">
-            <div class="security-item">
-              <div class="security-icon">
-                <i class="fas fa-qrcode"></i>
-              </div>
-              <div class="security-text">
-                <h4>Secure Device Pairing</h4>
-                <p>
-                  QR code-based pairing with one-time tokens ensures only
-                  authorized devices can connect.
-                </p>
-              </div>
-            </div>
-            <div class="security-item">
-              <div class="security-icon">
-                <i class="fas fa-network-wired"></i>
-              </div>
-              <div class="security-text">
-                <h4>LAN-Only Communication</h4>
-                <p>
-                  All communication happens over your local network. No internet
-                  connection required.
-                </p>
-              </div>
-            </div>
-            <div class="security-item">
-              <div class="security-icon">
-                <i class="fas fa-shield-alt"></i>
-              </div>
-              <div class="security-text">
-                <h4>No Third-Party Servers</h4>
-                <p>
-                  Your data never leaves your network. No cloud storage or
-                  external services involved.
-                </p>
-              </div>
-            </div>
-            <div class="security-item">
-              <div class="security-icon">
-                <i class="fas fa-lock"></i>
-              </div>
-              <div class="security-text">
-                <h4>Command Whitelisting</h4>
-                <p>
-                  Strict whitelisting of allowed commands prevents unauthorized
-                  system access.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="security-visual">
-            <div class="qr-code-demo">
-              <div class="qr-code">
-                <div class="qr-pattern"></div>
-              </div>
-              <div class="pairing-info">
-                <h4>Device Pairing</h4>
-                <p>Scan QR code to connect devices securely</p>
-                <div class="pairing-status">
-                  <span class="status-dot connected"></span>
-                  <span>Connected</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Download Section -->
     <section id="download" class="download">
       <div class="container">
         <div class="section-header">
-          <h2>Get Started Today</h2>
+          <h2>Services</h2>
           <p>Download and set up your cross-device control system</p>
         </div>
         <div class="download-grid">
@@ -444,7 +270,7 @@
           <div class="footer-section">
             <div class="footer-logo">
               <i class="fas fa-network-wired"></i>
-              <span>DeerHack</span>
+              <span>SyncBridge</span>
             </div>
             <p>
               Cross-device control and sync system for seamless local network
@@ -481,7 +307,7 @@
         </div>
         <div class="footer-bottom">
           <p>
-            &copy; 2024 DeerHack. All rights reserved. Built with ❤️ for
+            &copy; 2024 SyncBridge. All rights reserved. Built with ❤️ for
             seamless cross-device control.
           </p>
         </div>
