@@ -1,0 +1,16 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6EA8FE"/>
+      <stop offset="1" stop-color="#7B4DCC"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded square background -->
+  <rect x="0" y="0" width="120" height="120" rx="24" fill="url(#bgGradient)"/>
+  <!-- Battery outline (centered) -->
+  <rect x="36" y="46" width="48" height="28" rx="8" stroke="#fff" stroke-width="6" fill="none"/>
+  <!-- Battery positive terminal (centered) -->
+  <rect x="84" y="54" width="8" height="12" rx="2" fill="#fff"/>
+  <!-- Battery fill (centered) -->
+  <rect x="44" y="54" width="24" height="12" rx="2" fill="#fff"/>
+</svg> 

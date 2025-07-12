@@ -1,0 +1,16 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6EA8FE"/>
+      <stop offset="1" stop-color="#7B4DCC"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded square background -->
+  <rect x="0" y="0" width="120" height="120" rx="24" fill="url(#bgGradient)"/>
+  <!-- Clipboard body with more pronounced curved top -->
+  <path d="M36 56 Q60 20 84 56 Q92 56 92 64 V92 Q92 100 84 100 H36 Q28 100 28 92 V64 Q28 56 36 56 Z" fill="#fff"/>
+  <!-- Clipboard top circle -->
+  <circle cx="60" cy="44" r="6" fill="#7B4DCC"/>
+  <!-- Clipboard horizontal line -->
+  <rect x="52" y="56" width="16" height="4" rx="2" fill="#7B4DCC"/>
+</svg> 

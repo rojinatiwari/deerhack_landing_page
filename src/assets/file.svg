@@ -1,0 +1,13 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6EA8FE"/>
+      <stop offset="1" stop-color="#7B4DCC"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded square background -->
+  <rect x="0" y="0" width="120" height="120" rx="24" fill="url(#bgGradient)"/>
+  <!-- File/document with folded corner -->
+  <path d="M40 28a4 4 0 0 1 4-4h32l12 12v56a4 4 0 0 1-4 4H44a4 4 0 0 1-4-4V28z" fill="#fff"/>
+  <path d="M76 24v12h12" fill="#E9E9FC"/>
+</svg> 
