@@ -2,6 +2,11 @@ import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react
 import Home from './pages/Home';
 import ClipboardSync from './pages/ClipboardSync';
 import SlideControl from './pages/SlideControl';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Features from './components/Features';
+import Services from './components/Services';
+import Footer from './components/Footer';
 
 const navItems = [
   { 
@@ -71,20 +76,40 @@ function Sidebar() {
   );
 }
 
+function LandingPage() {
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <Features />
+      <Services />
+      <Footer />
+    </>
+  );
+}
+
 export default function App() {
   return (
     <Router>
-      <div className="flex h-screen bg-gray-50">
-        <Sidebar />
-        <main className="flex-1 overflow-auto">
-          <Routes>
-            <Route path="/share" element={<Home />} />
-            <Route path="/share/clipboard" element={<ClipboardSync />} />
-            <Route path="/share/slide-control" element={<SlideControl />} />
-            <Route path="*" element={<Home />} />
-          </Routes>
-        </main>
-      </div>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route
+          path="/share/*"
+          element={
+            <div className="flex h-screen bg-gray-50">
+              <Sidebar />
+              <main className="flex-1 overflow-auto">
+                <Routes>
+                  <Route path="" element={<Home />} />
+                  <Route path="clipboard" element={<ClipboardSync />} />
+                  <Route path="slide-control" element={<SlideControl />} />
+                  <Route path="*" element={<Home />} />
+                </Routes>
+              </main>
+            </div>
+          }
+        />
+      </Routes>
     </Router>
   );
 } 
