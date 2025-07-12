@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css';
+import { handleDownloadClick } from '../hooks/useAnimations';
 
 interface Service {
   id: number;
@@ -77,7 +77,7 @@ const Services: React.FC = () => {
               </div>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
-              <button className="btn btn-download">
+              <button className="btn btn-download" onClick={handleDownloadClick}>
                 <i className="fas fa-download"></i>
                 {service.buttonText}
               </button>
@@ -103,4 +103,4 @@ const Services: React.FC = () => {
   );
 };
 
-export default Services; 
+export default Services;  

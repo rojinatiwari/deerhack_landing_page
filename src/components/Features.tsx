@@ -1,5 +1,4 @@
 import React from 'react';
-import './styles.css';
 
 interface Feature {
   id: number;
@@ -71,4 +70,4 @@ const Features: React.FC = () => {
   );
 };
 
-export default Features; 
+export default Features;  

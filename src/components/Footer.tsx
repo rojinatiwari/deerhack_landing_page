@@ -1,5 +1,4 @@
 import React from 'react';
-import './styles.css';
 
 interface FooterLink {
   id: number;
@@ -87,4 +86,4 @@ const Footer: React.FC = () => {
   );
 };
 
-export default Footer; 
+export default Footer;  

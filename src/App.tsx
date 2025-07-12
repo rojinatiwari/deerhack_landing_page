@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import './App.css';
 
 const App: React.FC = () => {
+  console.log('App component rendering');
   return (
     <div className="App">
       <Navbar />

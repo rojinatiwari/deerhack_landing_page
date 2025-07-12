@@ -1,7 +1,6 @@
-import React from 'react';
-import './styles.css';
 
-const Hero: React.FC = () => {
+
+const Hero = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -95,4 +94,4 @@ const Hero: React.FC = () => {
   );
 };
 
-export default Hero; 
+export default Hero;  
