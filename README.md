@@ -1,212 +1,169 @@
-# 🧩 DeerHack - Cross-Device LAN Control & Sync System
+# SyncBridge - Cross-Device LAN Control & Sync System
 
-A modern, responsive landing page for the DeerHack project - a fully local, cross-platform system that enables seamless communication between mobile, laptop, and browser over the same LAN without any internet connection or third-party servers.
-
-## 🎯 Project Overview
-
-DeerHack is a comprehensive solution that allows you to:
-
-- **Sync clipboard** between devices instantly
-- **Transfer files** with chunked WebSocket transfer
-- **Control presentations** remotely (Google Slides, Canva, etc.)
-- **Simulate mouse and keyboard** input from mobile
-- **Monitor battery levels** across all devices
-- **Mirror notifications** from mobile to desktop
+A modern React TypeScript landing page for SyncBridge, a cross-device LAN control and sync system that seamlessly connects mobile, laptop, and browser over local network without internet or third-party servers.
 
 ## 🚀 Features
 
-### 📱 Mobile App (React Native)
+- **Modern React TypeScript** - Built with React 18 and TypeScript for type safety
+- **Responsive Design** - Fully responsive across all devices
+- **Smooth Animations** - CSS transitions and hover effects
+- **Component-Based Architecture** - Modular and maintainable code structure
+- **Modern Styling** - CSS Grid, Flexbox, and modern design patterns
 
-- Remote controller and data sender
-- WebSocket communication
-- Touchpad-style mouse control
-- Virtual keyboard simulation
-- Background support
-- QR code pairing
+## 🛠️ Tech Stack
 
-### 💻 Desktop App (Python)
-
-- Background service with LAN listening
-- WebSocket server (asyncio + websockets)
-- Mouse & keyboard simulation
-- File receiver/sender
-- QR code generator
-- System tray integration
-
-### 🌐 Web Controller
-
-- Browser-based UI for testing
-- Local network hosting
-- Manual clipboard sync
-- Touchpad simulation
-- File upload capabilities
-
-### 🔌 Browser Extension
-
-- Google Slides, Canva, Prezi support
-- WebSocket client connection
-- Slide navigation via key events
-- Scoped permissions
-
-## 🛡️ Security Features
-
-- **Secure Device Pairing**: QR code-based with one-time tokens
-- **LAN-Only Communication**: No internet required
-- **No Third-Party Servers**: Data never leaves your network
-- **Command Whitelisting**: Strict permission controls
+- **React 18** - Latest React with hooks and modern patterns
+- **TypeScript** - Type-safe development
+- **CSS3** - Modern styling with Grid and Flexbox
+- **Font Awesome** - Icon library
+- **Google Fonts** - Inter font family
 
 ## 📁 Project Structure
 
 ```
-DeerHackLanding/
-├── index.html          # Main landing page
-├── styles.css          # Comprehensive CSS styles
-├── script.js           # Interactive JavaScript functionality
-└── README.md           # Project documentation
+src/
+├── components/
+│   ├── Navbar.tsx          # Navigation component
+│   ├── Hero.tsx            # Hero section with main content
+│   ├── Features.tsx        # Features showcase
+│   ├── Services.tsx        # Services/Download section
+│   ├── Footer.tsx          # Footer component
+│   ├── Navbar.css          # Navigation styles
+│   └── styles.css          # Component styles
+├── App.tsx                 # Main App component
+├── App.css                 # Global styles
+├── index.tsx               # Entry point
+└── index.css               # Base styles
 ```
 
-## 🎨 Design Features
+## 🎨 Components
 
-### Modern UI/UX
+### Navbar
 
-- **Responsive Design**: Works perfectly on all devices
-- **Smooth Animations**: Intersection Observer animations
-- **Interactive Elements**: Hover effects and micro-interactions
-- **Professional Typography**: Inter font family
-- **Gradient Backgrounds**: Modern color schemes
-
-### Interactive Components
-
-- **Device Mockups**: Animated phone, laptop, and browser displays
-- **Feature Cards**: Hover effects and smooth transitions
-- **Component Showcase**: Detailed breakdown of system parts
-- **Security Visualization**: QR code pairing demo
-- **Download Section**: Interactive download buttons
-
-### Performance Optimizations
-
-- **Lazy Loading**: Elements animate in as they become visible
-- **Smooth Scrolling**: Navigation with smooth scroll behavior
-- **Mobile-First**: Responsive design with mobile menu
-- **Optimized Assets**: Efficient CSS and JavaScript
-
-## 🚀 Getting Started
-
-1. **Clone the repository**:
-
-   ```bash
-   git clone https://github.com/yourusername/deerhack-landing.git
-   cd deerhack-landing
-   ```
-
-2. **Open the landing page**:
-
-   - Simply open `index.html` in your web browser
-   - Or serve it using a local server:
-
-     ```bash
-     # Using Python
-     python -m http.server 8000
-
-     # Using Node.js
-     npx serve .
-
-     # Using PHP
-     php -S localhost:8000
-     ```
-
-3. **View the page**:
-   - Navigate to `http://localhost:8000` in your browser
-
-## 🎯 Landing Page Sections
+- Fixed navigation with scroll effects
+- Mobile hamburger menu
+- Smooth scroll to sections
+- Responsive design
 
 ### Hero Section
 
-- Compelling headline with typing animation
-- Device mockups with floating animations
+- Main title and subtitle
 - Call-to-action buttons
-- Gradient background with parallax effect
+- Device mockup visualization
+- Gradient background
 
 ### Features Section
 
-- Six key features with icons
-- Hover animations and transitions
+- 6 feature cards with icons
+- Hover animations
 - Responsive grid layout
+- TypeScript interfaces for data
 
-### Components Section
+### Services Section
 
-- Detailed breakdown of all four system components
-- Technology badges (React Native, Python, etc.)
-- Feature lists for each component
+- Download cards for different platforms
+- Setup steps with numbered process
+- Interactive buttons
+- Clean card design
 
-### Security Section
+### Footer
 
-- Security features with icons
-- QR code pairing visualization
-- Dark theme for emphasis
+- Company information
+- Feature links
+- Support links
+- Copyright notice
 
-### Download Section
+## 🚀 Getting Started
 
-- Download cards for each component
-- Setup instructions with step-by-step guide
-- Interactive download buttons with notifications
+### Prerequisites
 
-## 🎨 Customization
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone <repository-url>
+cd syncbridge-landing
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the development server:
+
+```bash
+npm start
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+## 🎯 Key Features of SyncBridge
+
+### Cross-Device Control
+
+- **Clipboard Sync** - Instant clipboard synchronization between devices
+- **File Transfer** - Seamless file transfer with chunked WebSocket
+- **Remote Input** - Touchpad-style mouse and virtual keyboard control
+- **Presentation Control** - Navigate slides in Google Slides, Canva, etc.
+- **Media Control** - Control media playback and system audio
+- **Battery Sharing** - Real-time battery level monitoring
+
+### Security & Privacy
+
+- **LAN-Only Communication** - No internet required
+- **Secure Device Pairing** - QR code-based authentication
+- **No Third-Party Servers** - Complete local control
+- **Command Whitelisting** - Strict security measures
+
+## 📱 Supported Platforms
+
+- **Mobile App** - React Native for Android
+- **Desktop App** - Python backend for Windows/Linux/macOS
+- **Browser Extension** - Chrome/Firefox extension
+
+## 🎨 Design Features
+
+- **Modern UI/UX** - Clean, professional design
+- **Responsive Layout** - Works on all screen sizes
+- **Smooth Animations** - Engaging user interactions
+- **Accessibility** - Semantic HTML and keyboard navigation
+- **Performance** - Optimized for fast loading
+
+## 🔧 Customization
 
 ### Colors
 
-The landing page uses a modern color palette:
+The main color scheme uses:
 
-- **Primary Blue**: `#2563eb`
-- **Gradient Purple**: `#667eea` to `#764ba2`
-- **Dark Theme**: `#1a202c`
-- **Light Gray**: `#f7fafc`
+- Primary: `#667eea` to `#764ba2` (gradient)
+- Text: `#1a1a1a` (dark)
+- Background: `#f8f9fa` (light gray)
 
 ### Typography
 
-- **Font Family**: Inter (Google Fonts)
-- **Weights**: 300, 400, 500, 600, 700
+- Font Family: Inter (Google Fonts)
+- Weights: 300, 400, 500, 600, 700
 
-### Animations
+### Icons
 
-- **Floating Devices**: CSS keyframe animations
-- **Scroll Animations**: Intersection Observer
-- **Hover Effects**: Transform and scale transitions
-- **Typing Effect**: JavaScript character-by-character display
+- Font Awesome 6.4.0
+- Network, device, and feature icons
 
-## 📱 Responsive Design
+## 📄 License
 
-The landing page is fully responsive and optimized for:
-
-- **Desktop**: 1200px+ (full layout)
-- **Tablet**: 768px - 1199px (adjusted grid)
-- **Mobile**: < 768px (stacked layout, mobile menu)
-
-## 🔧 Browser Support
-
-- **Chrome**: 60+
-- **Firefox**: 55+
-- **Safari**: 12+
-- **Edge**: 79+
-
-## 🚀 Deployment
-
-### Static Hosting
-
-The landing page can be deployed to any static hosting service:
-
-- **Netlify**: Drag and drop the folder
-- **Vercel**: Connect your GitHub repository
-- **GitHub Pages**: Push to a GitHub repository
-- **AWS S3**: Upload files to S3 bucket
-
-### Custom Domain
-
-Add your custom domain by:
-
-1. Purchasing a domain
-2. Configuring DNS settings
-3. Setting up SSL certificate
+This project is licensed under the MIT License.
 
 ## 🤝 Contributing
 
@@ -216,16 +173,14 @@ Add your custom domain by:
 4. Test thoroughly
 5. Submit a pull request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## 📞 Support
 
-- **Documentation**: Check the README for setup instructions
-- **Issues**: Report bugs or feature requests on GitHub
-- **Contact**: Reach out for additional support
+For support and questions:
+
+- Create an issue on GitHub
+- Contact the development team
+- Check the documentation
 
 ---
 
-Built with ❤️ for seamless cross-device control and synchronization.
+Built with ❤️ for seamless cross-device control.
