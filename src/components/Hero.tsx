@@ -1,6 +1,8 @@
-
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
+  const navigate = useNavigate();
+  
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -21,7 +23,7 @@ const Hero = () => {
           <div className="hero-buttons">
             <button 
               className="btn btn-primary"
-              onClick={() => scrollToSection('services')}
+              onClick={() => navigate('/share')}
             >
               <i className="fas fa-download"></i>
               Get Started
