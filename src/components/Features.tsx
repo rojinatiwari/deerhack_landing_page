@@ -29,7 +29,7 @@ const Features: React.FC = () => {
     },
     {
       id: 4,
-      icon: 'fas fa-presentation',
+      icon: 'fas fa-file-powerpoint',
       title: 'Presentation Control',
       description: 'Navigate slides in Google Slides, Canva, and other presentation tools with simple gestures.'
     },
@@ -51,7 +51,7 @@ const Features: React.FC = () => {
     <section id="features" className="features">
       <div className="container">
         <div className="section-header">
-          <h2>Powerful Features</h2>
+          <h2>Features</h2>
           <p>Everything you need for seamless cross-device control</p>
         </div>
         <div className="features-grid">

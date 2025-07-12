@@ -27,14 +27,14 @@ const Services: React.FC = () => {
     },
     {
       id: 2,
-      icon: 'fab fa-python',
+      icon: 'fa-solid fa-desktop',
       title: 'Desktop App',
       description: 'Python backend for Windows/Linux/macOS',
       buttonText: 'Download'
     },
     {
       id: 3,
-      icon: 'fab fa-chrome',
+      icon: 'fa-solid fa-window-restore',
       title: 'Browser Extension',
       description: 'Chrome/Firefox extension for presentation control',
       buttonText: 'Install Extension'

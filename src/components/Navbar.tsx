@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Navbar.css';
+import logoDefault from '../assets/logo-default.svg';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
@@ -30,7 +31,7 @@ const Navbar = () => {
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <div className="nav-logo">
-          <i className="fas fa-network-wired"></i>
+          <img src={logoDefault} alt="SyncBridge Logo" className="nav-logo-img" />
           <span>SyncBridge</span>
         </div>
         <ul className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>
